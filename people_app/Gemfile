@@ -55,6 +55,10 @@ group :test, :development do
   gem "guard-rspec"
   gem "guard-test"
   gem 'annotate'
+  gem "better_errors"
+  gem "binding_of_caller"
 end
+
+# gem "rails_erd"
 
 

@@ -5,5 +5,7 @@ FactoryGirl.define do
 		last_name "Doe"
 		birthdate "1999-12-31"
 		img_url "http://placesheen.com/200/300"
+		drinks 0
+		license true
 	end	
 end
