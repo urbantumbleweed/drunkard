@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Use postgresql as the database for Active Record
+gem 'pg'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
@@ -32,6 +32,8 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'pry-debugger'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -46,10 +48,13 @@ end
 
 #rspec testing
 group :test, :development do
-	gem 'factory_girl_rails', '~>4.0'
-	gem 'capybara'
-	gem 'guard'
-	gem 'rb-fsevent'
-	gem 'rspec-rails', '~>2.14.1'
-	gem 'guard-rspec', '~>4.2.8'
+	gem "factory_girl_rails", "~>4.0"
+	gem "capybara"
+	gem "rb-fsevent"
+  gem "rspec-rails"
+  gem "guard-rspec"
+  gem "guard-test"
+  gem 'annotate'
 end
+
+

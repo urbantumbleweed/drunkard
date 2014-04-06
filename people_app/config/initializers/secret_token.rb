@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-PeopleApp::Application.config.secret_key_base = '9222034b6a8447845fef2b3fc1a12c9fe49bf2688ed638b7dedc6f7ff4f38630f240fde36dca3a50515cf54a01c7e16e286bd7676a48c85fc8e69e0c282ea5d4'
+PeopleApp::Application.config.secret_key_base = '370c39f417f63914a60945d6a7507268ccb1b6936e92613aa7f7f1cbf501f84c23adf332f1db3acff47d1e07821b7a7bd18135800bd5b47dbe3906a1dab1d1c0'
