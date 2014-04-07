@@ -22,4 +22,12 @@ class Person < ActiveRecord::Base
 		
 	end
 	
+	def have_a_drink
+		t = Time.now
+		b = Date._parse(self.birthdate)
+		b = Date.new(b[:year], b[:mon], b[:mday])
+		if (t - self.birthdate) > 21
+			self.drinks += 1
+		end
+	end
 end

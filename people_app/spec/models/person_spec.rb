@@ -17,6 +17,7 @@ describe Person do
 
 	before(:each) do
 		@person = FactoryGirl.create(:person)
+		@too_young = FactoryGirl.create(:baby)
 	end
 
 	describe ".create" do
@@ -45,6 +46,27 @@ describe Person do
 		context "when requesting a person's birthday" do
 			it "should return a date in strng format" do
 				expect(@person.birthday).to be_a(String)
+			end
+		end
+	end
+
+	describe "#have_a_drink" do
+		context "over 21" do
+			it "drinks increases by one" do
+				binding.pry
+				expect(@person.have_a_drink).to change{@person.drinks}.by(1)
+			end
+		end
+
+		context "under 21" do
+			it "should say 'wait a few years'" do 
+
+			end
+		end
+
+		context "over 21 with three drinks" do
+			it "should say 'go home, you are drunk'" do
+
 			end
 		end
 	end
